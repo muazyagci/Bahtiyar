@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df1a34aa-0db4-4e5d-a0c6-ba25e0f37d04" name="Changes" comment="Initial Commit 2" />
+    <list default="true" id="df1a34aa-0db4-4e5d-a0c6-ba25e0f37d04" name="Changes" comment="Initial Commit 2">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/Bahtiyar/runners/CukesRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/Bahtiyar/runners/CukesRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/Bahtiyar/step_definitions/Amazon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/Bahtiyar/step_definitions/Amazon.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +22,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -90,7 +99,7 @@
       <updated>1677189484380</updated>
       <workItem from="1677189485622" duration="2790000" />
       <workItem from="1677192291873" duration="361000" />
-      <workItem from="1677244565735" duration="332000" />
+      <workItem from="1677244565735" duration="2767000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1677189715321</created>
@@ -106,11 +115,29 @@
       <option name="project" value="LOCAL" />
       <updated>1677244883571</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Initial Commit 2">
+      <created>1677245482378</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1677245482378</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />

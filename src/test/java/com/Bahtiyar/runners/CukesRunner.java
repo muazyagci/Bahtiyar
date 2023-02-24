@@ -12,8 +12,8 @@ import org.junit.runner.RunWith;
 
         },
         features="src/test/resources",
-        glue ="src/test/java/com/Bahtiyar/step_definitions",
-        dryRun = true,
+        glue ="com/Bahtiyar/step_definitions",
+        dryRun = false,
         stepNotifications = true,
         tags = "@login"
 )
