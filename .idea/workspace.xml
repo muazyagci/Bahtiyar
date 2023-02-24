@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df1a34aa-0db4-4e5d-a0c6-ba25e0f37d04" name="Changes" comment="Initial Commit">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configurations.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/Bahtiyar/page/pages.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/Bahtiyar/runners/CukesRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/Bahtiyar/step_definitions/Amazon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/Bahtiyar/utilities/BrowserUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/Bahtiyar/utilities/ConfigurationReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/Bahtiyar/utilities/Driver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/AmazonLogin.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
-    </list>
+    <list default="true" id="df1a34aa-0db4-4e5d-a0c6-ba25e0f37d04" name="Changes" comment="Initial Commit 2" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -104,6 +90,7 @@
       <updated>1677189484380</updated>
       <workItem from="1677189485622" duration="2790000" />
       <workItem from="1677192291873" duration="361000" />
+      <workItem from="1677244565735" duration="332000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1677189715321</created>
@@ -112,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677189715321</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Initial Commit 2">
+      <created>1677244883571</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1677244883571</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,7 +114,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
+    <MESSAGE value="Initial Commit 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit 2" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
