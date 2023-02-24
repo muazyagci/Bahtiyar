@@ -5,6 +5,7 @@ import com.Bahtiyar.utilities.ConfigurationReader;
 import com.Bahtiyar.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import org.junit.Assert;
 
 
 public class Amazon {
@@ -24,15 +25,18 @@ public class Amazon {
     }
     @Given("user types the given email account")
     public void user_types_the_given_email_account() {
-        
+        pages.mailbox.sendKeys(ConfigurationReader.getProperty("email"));
+pages.continueBtn.click();
     }
     @Given("user types the given password")
     public void user_types_the_given_password() {
-        
+        pages.PasswordInputBox.sendKeys(ConfigurationReader.getProperty("password"));
+pages.iniciarBtn.click();
     }
     @Then("user should see Muaz on dashboard")
     public void user_should_see_muaz_on_dashboard() {
-        
+        System.out.println(pages.verification.getText());
+        Assert.assertTrue(pages.verification.getText().contains("Muaz"));
     }
 
 }

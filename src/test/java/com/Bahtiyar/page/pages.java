@@ -13,4 +13,15 @@ public class pages {
     public WebElement acptCookiesBtn;
     @FindBy (xpath = "(//a[@data-csa-c-type='link'])[1]")
     public WebElement accountBtn;
+    @FindBy (id ="ap_email" )
+    public WebElement mailbox;
+    @FindBy(id = "continue")
+    public WebElement continueBtn;
+    @FindBy(id = "ap_password")
+    public WebElement PasswordInputBox;
+    @FindBy(id = "signInSubmit")
+    public WebElement iniciarBtn;
+    @FindBy(id = "nav-link-accountList-nav-line-1")
+    public WebElement verification;
+
 }
