@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df1a34aa-0db4-4e5d-a0c6-ba25e0f37d04" name="Changes" comment="Initial Commit 2">
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/Bahtiyar/step_definitions/cydeo/practice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/cydeo.practice.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/Bahtiyar/page/pages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/Bahtiyar/page/pages.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/Bahtiyar/runners/CukesRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/Bahtiyar/runners/CukesRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/Bahtiyar/step_definitions/Amazon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/Bahtiyar/step_definitions/Amazon.java" afterDir="false" />
     </list>
@@ -133,7 +138,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="chef" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -143,6 +160,17 @@
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Initial Commit 2" />
     <option name="LAST_COMMIT_MESSAGE" value="Initial Commit 2" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/Bahtiyar/runners/CukesRunner.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
