@@ -5,14 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df1a34aa-0db4-4e5d-a0c6-ba25e0f37d04" name="Changes" comment="Initial Commit 2">
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/Bahtiyar/step_definitions/cydeo/practice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/cydeo.practice.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/Bahtiyar/page/cydeo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/Bahtiyar/step_definitions/practice.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/Bahtiyar/page/pages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/Bahtiyar/page/pages.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/Bahtiyar/runners/CukesRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/Bahtiyar/runners/CukesRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/Bahtiyar/step_definitions/Amazon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/Bahtiyar/step_definitions/Amazon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/Bahtiyar/step_definitions/cydeo/practice.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677245482378</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Initial Commit 2">
+      <created>1677787057477</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1677787057477</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

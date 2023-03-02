@@ -1,0 +1,578 @@
+Index: src/test/java/com/Bahtiyar/runners/CukesRunner.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.Bahtiyar.runners;\r\n\r\nimport io.cucumber.junit.Cucumber;\r\nimport io.cucumber.junit.CucumberOptions;\r\nimport org.junit.runner.RunWith;\r\n@RunWith(Cucumber.class)\r\n@CucumberOptions(\r\n        plugin = {\r\n                \"html:target/cucumber-reports.html\",\r\n                \"rerun:target/rerun.txt\",\r\n                \"json:target/cucumber.json\"\r\n\r\n        },\r\n        features=\"src/test/resources\",\r\n        glue =\"src/test/java/com/Bahtiyar/step_definitions\",\r\n        dryRun = true,\r\n        stepNotifications = true,\r\n        tags = \"@login\"\r\n)\r\npublic class CukesRunner {\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/com/Bahtiyar/runners/CukesRunner.java b/src/test/java/com/Bahtiyar/runners/CukesRunner.java
+--- a/src/test/java/com/Bahtiyar/runners/CukesRunner.java	(revision f35b90e85a57d6cef134be14037a71c669e361e9)
++++ b/src/test/java/com/Bahtiyar/runners/CukesRunner.java	(date 1677247711092)
+@@ -12,8 +12,8 @@
+ 
+         },
+         features="src/test/resources",
+-        glue ="src/test/java/com/Bahtiyar/step_definitions",
+-        dryRun = true,
++        glue ="com/Bahtiyar/step_definitions",
++        dryRun = false,
+         stepNotifications = true,
+         tags = "@login"
+ )
+Index: src/test/java/com/Bahtiyar/step_definitions/Amazon.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.Bahtiyar.step_definitions;\r\n\r\nimport com.Bahtiyar.utilities.ConfigurationReader;\r\nimport com.Bahtiyar.utilities.Driver;\r\nimport io.cucumber.java.en.Given;\r\nimport io.cucumber.java.en.Then;\r\n\r\n\r\npublic class Amazon {\r\n    @Given(\"user is on the Dashboard\")\r\n    public void user_is_on_the_dashboard() {\r\n        Driver.getDriver().get(ConfigurationReader.getProperty(\"amzn.url\"));\r\n    }\r\n    @Given(\"user clicks to account button\")\r\n    public void user_clicks_to_account_button() {\r\n        \r\n    }\r\n    @Given(\"user clicks to identify button\")\r\n    public void user_clicks_to_identify_button() {\r\n        \r\n    }\r\n    @Given(\"user types the given email account\")\r\n    public void user_types_the_given_email_account() {\r\n        \r\n    }\r\n    @Given(\"user types the given password\")\r\n    public void user_types_the_given_password() {\r\n        \r\n    }\r\n    @Then(\"user should see Muaz on dashboard\")\r\n    public void user_should_see_muaz_on_dashboard() {\r\n        \r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/com/Bahtiyar/step_definitions/Amazon.java b/src/test/java/com/Bahtiyar/step_definitions/Amazon.java
+--- a/src/test/java/com/Bahtiyar/step_definitions/Amazon.java	(revision f35b90e85a57d6cef134be14037a71c669e361e9)
++++ b/src/test/java/com/Bahtiyar/step_definitions/Amazon.java	(date 1677247821369)
+@@ -7,9 +7,13 @@
+ 
+ 
+ public class Amazon {
++
+     @Given("user is on the Dashboard")
+     public void user_is_on_the_dashboard() {
++
+         Driver.getDriver().get(ConfigurationReader.getProperty("amzn.url"));
++
++        
+     }
+     @Given("user clicks to account button")
+     public void user_clicks_to_account_button() {
+@@ -31,4 +35,5 @@
+     public void user_should_see_muaz_on_dashboard() {
+         
+     }
++
+ }
+Index: configurations.properties
+===================================================================
+diff --git a/configurations.properties b/configurations.properties
+deleted file mode 100644
+--- a/configurations.properties	(revision f35b90e85a57d6cef134be14037a71c669e361e9)
++++ /dev/null	(revision f35b90e85a57d6cef134be14037a71c669e361e9)
+@@ -1,2 +0,0 @@
+-browser=chrome
+-amzn.url=www.amazon.com
+Index: configuration.properties
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>ISO-8859-1
+===================================================================
+diff --git a/configuration.properties b/configuration.properties
+new file mode 100644
+--- /dev/null	(date 1677247821362)
++++ b/configuration.properties	(date 1677247821362)
+@@ -0,0 +1,2 @@
++browser=chrome
++amzn.url=https://www.amazon.com/
+Index: .idea/dbnavigator.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/dbnavigator.xml b/.idea/dbnavigator.xml
+new file mode 100644
+--- /dev/null	(date 1677245634696)
++++ b/.idea/dbnavigator.xml	(date 1677245634696)
+@@ -0,0 +1,414 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="DBNavigator.Project.DataEditorManager">
++    <record-view-column-sorting-type value="BY_INDEX" />
++    <value-preview-text-wrapping value="true" />
++    <value-preview-pinned value="false" />
++  </component>
++  <component name="DBNavigator.Project.DatabaseEditorStateManager">
++    <last-used-providers />
++  </component>
++  <component name="DBNavigator.Project.DatabaseFileManager">
++    <open-files />
++  </component>
++  <component name="DBNavigator.Project.Settings">
++    <connections />
++    <browser-settings>
++      <general>
++        <display-mode value="TABBED" />
++        <navigation-history-size value="100" />
++        <show-object-details value="false" />
++      </general>
++      <filters>
++        <object-type-filter>
++          <object-type name="SCHEMA" enabled="true" />
++          <object-type name="USER" enabled="true" />
++          <object-type name="ROLE" enabled="true" />
++          <object-type name="PRIVILEGE" enabled="true" />
++          <object-type name="CHARSET" enabled="true" />
++          <object-type name="TABLE" enabled="true" />
++          <object-type name="VIEW" enabled="true" />
++          <object-type name="MATERIALIZED_VIEW" enabled="true" />
++          <object-type name="NESTED_TABLE" enabled="true" />
++          <object-type name="COLUMN" enabled="true" />
++          <object-type name="INDEX" enabled="true" />
++          <object-type name="CONSTRAINT" enabled="true" />
++          <object-type name="DATASET_TRIGGER" enabled="true" />
++          <object-type name="DATABASE_TRIGGER" enabled="true" />
++          <object-type name="SYNONYM" enabled="true" />
++          <object-type name="SEQUENCE" enabled="true" />
++          <object-type name="PROCEDURE" enabled="true" />
++          <object-type name="FUNCTION" enabled="true" />
++          <object-type name="PACKAGE" enabled="true" />
++          <object-type name="TYPE" enabled="true" />
++          <object-type name="TYPE_ATTRIBUTE" enabled="true" />
++          <object-type name="ARGUMENT" enabled="true" />
++          <object-type name="DIMENSION" enabled="true" />
++          <object-type name="CLUSTER" enabled="true" />
++          <object-type name="DBLINK" enabled="true" />
++        </object-type-filter>
++      </filters>
++      <sorting>
++        <object-type name="COLUMN" sorting-type="NAME" />
++        <object-type name="FUNCTION" sorting-type="NAME" />
++        <object-type name="PROCEDURE" sorting-type="NAME" />
++        <object-type name="ARGUMENT" sorting-type="POSITION" />
++        <object-type name="TYPE ATTRIBUTE" sorting-type="POSITION" />
++      </sorting>
++      <default-editors>
++        <object-type name="VIEW" editor-type="SELECTION" />
++        <object-type name="PACKAGE" editor-type="SELECTION" />
++        <object-type name="TYPE" editor-type="SELECTION" />
++      </default-editors>
++    </browser-settings>
++    <navigation-settings>
++      <lookup-filters>
++        <lookup-objects>
++          <object-type name="SCHEMA" enabled="true" />
++          <object-type name="USER" enabled="false" />
++          <object-type name="ROLE" enabled="false" />
++          <object-type name="PRIVILEGE" enabled="false" />
++          <object-type name="CHARSET" enabled="false" />
++          <object-type name="TABLE" enabled="true" />
++          <object-type name="VIEW" enabled="true" />
++          <object-type name="MATERIALIZED VIEW" enabled="true" />
++          <object-type name="INDEX" enabled="true" />
++          <object-type name="CONSTRAINT" enabled="true" />
++          <object-type name="DATASET TRIGGER" enabled="true" />
++          <object-type name="DATABASE TRIGGER" enabled="true" />
++          <object-type name="SYNONYM" enabled="false" />
++          <object-type name="SEQUENCE" enabled="true" />
++          <object-type name="PROCEDURE" enabled="true" />
++          <object-type name="FUNCTION" enabled="true" />
++          <object-type name="PACKAGE" enabled="true" />
++          <object-type name="TYPE" enabled="true" />
++          <object-type name="DIMENSION" enabled="false" />
++          <object-type name="CLUSTER" enabled="false" />
++          <object-type name="DBLINK" enabled="true" />
++        </lookup-objects>
++        <force-database-load value="false" />
++        <prompt-connection-selection value="true" />
++        <prompt-schema-selection value="true" />
++      </lookup-filters>
++    </navigation-settings>
++    <dataset-grid-settings>
++      <general>
++        <enable-zooming value="true" />
++        <enable-column-tooltip value="true" />
++      </general>
++      <sorting>
++        <nulls-first value="true" />
++        <max-sorting-columns value="4" />
++      </sorting>
++      <audit-columns>
++        <column-names value="" />
++        <visible value="true" />
++        <editable value="false" />
++      </audit-columns>
++    </dataset-grid-settings>
++    <dataset-editor-settings>
++      <text-editor-popup>
++        <active value="false" />
++        <active-if-empty value="false" />
++        <data-length-threshold value="100" />
++        <popup-delay value="1000" />
++      </text-editor-popup>
++      <values-actions-popup>
++        <show-popup-button value="true" />
++        <element-count-threshold value="1000" />
++        <data-length-threshold value="250" />
++      </values-actions-popup>
++      <general>
++        <fetch-block-size value="100" />
++        <fetch-timeout value="30" />
++        <trim-whitespaces value="true" />
++        <convert-empty-strings-to-null value="true" />
++        <select-content-on-cell-edit value="true" />
++        <large-value-preview-active value="true" />
++      </general>
++      <filters>
++        <prompt-filter-dialog value="true" />
++        <default-filter-type value="BASIC" />
++      </filters>
++      <qualified-text-editor text-length-threshold="300">
++        <content-types>
++          <content-type name="Text" enabled="true" />
++          <content-type name="Properties" enabled="true" />
++          <content-type name="XML" enabled="true" />
++          <content-type name="DTD" enabled="true" />
++          <content-type name="HTML" enabled="true" />
++          <content-type name="XHTML" enabled="true" />
++          <content-type name="Java" enabled="true" />
++          <content-type name="SQL" enabled="true" />
++          <content-type name="PL/SQL" enabled="true" />
++          <content-type name="JSON" enabled="true" />
++          <content-type name="JSON5" enabled="true" />
++          <content-type name="Groovy" enabled="true" />
++          <content-type name="AIDL" enabled="true" />
++          <content-type name="YAML" enabled="true" />
++          <content-type name="Manifest" enabled="true" />
++        </content-types>
++      </qualified-text-editor>
++      <record-navigation>
++        <navigation-target value="VIEWER" />
++      </record-navigation>
++    </dataset-editor-settings>
++    <code-editor-settings>
++      <general>
++        <show-object-navigation-gutter value="false" />
++        <show-spec-declaration-navigation-gutter value="true" />
++        <enable-spellchecking value="true" />
++        <enable-reference-spellchecking value="false" />
++      </general>
++      <confirmations>
++        <save-changes value="false" />
++        <revert-changes value="true" />
++      </confirmations>
++    </code-editor-settings>
++    <code-completion-settings>
++      <filters>
++        <basic-filter>
++          <filter-element type="RESERVED_WORD" id="keyword" selected="true" />
++          <filter-element type="RESERVED_WORD" id="function" selected="true" />
++          <filter-element type="RESERVED_WORD" id="parameter" selected="true" />
++          <filter-element type="RESERVED_WORD" id="datatype" selected="true" />
++          <filter-element type="RESERVED_WORD" id="exception" selected="true" />
++          <filter-element type="OBJECT" id="schema" selected="true" />
++          <filter-element type="OBJECT" id="role" selected="true" />
++          <filter-element type="OBJECT" id="user" selected="true" />
++          <filter-element type="OBJECT" id="privilege" selected="true" />
++          <user-schema>
++            <filter-element type="OBJECT" id="table" selected="true" />
++            <filter-element type="OBJECT" id="view" selected="true" />
++            <filter-element type="OBJECT" id="materialized view" selected="true" />
++            <filter-element type="OBJECT" id="index" selected="true" />
++            <filter-element type="OBJECT" id="constraint" selected="true" />
++            <filter-element type="OBJECT" id="trigger" selected="true" />
++            <filter-element type="OBJECT" id="synonym" selected="false" />
++            <filter-element type="OBJECT" id="sequence" selected="true" />
++            <filter-element type="OBJECT" id="procedure" selected="true" />
++            <filter-element type="OBJECT" id="function" selected="true" />
++            <filter-element type="OBJECT" id="package" selected="true" />
++            <filter-element type="OBJECT" id="type" selected="true" />
++            <filter-element type="OBJECT" id="dimension" selected="true" />
++            <filter-element type="OBJECT" id="cluster" selected="true" />
++            <filter-element type="OBJECT" id="dblink" selected="true" />
++          </user-schema>
++          <public-schema>
++            <filter-element type="OBJECT" id="table" selected="false" />
++            <filter-element type="OBJECT" id="view" selected="false" />
++            <filter-element type="OBJECT" id="materialized view" selected="false" />
++            <filter-element type="OBJECT" id="index" selected="false" />
++            <filter-element type="OBJECT" id="constraint" selected="false" />
++            <filter-element type="OBJECT" id="trigger" selected="false" />
++            <filter-element type="OBJECT" id="synonym" selected="false" />
++            <filter-element type="OBJECT" id="sequence" selected="false" />
++            <filter-element type="OBJECT" id="procedure" selected="false" />
++            <filter-element type="OBJECT" id="function" selected="false" />
++            <filter-element type="OBJECT" id="package" selected="false" />
++            <filter-element type="OBJECT" id="type" selected="false" />
++            <filter-element type="OBJECT" id="dimension" selected="false" />
++            <filter-element type="OBJECT" id="cluster" selected="false" />
++            <filter-element type="OBJECT" id="dblink" selected="false" />
++          </public-schema>
++          <any-schema>
++            <filter-element type="OBJECT" id="table" selected="true" />
++            <filter-element type="OBJECT" id="view" selected="true" />
++            <filter-element type="OBJECT" id="materialized view" selected="true" />
++            <filter-element type="OBJECT" id="index" selected="true" />
++            <filter-element type="OBJECT" id="constraint" selected="true" />
++            <filter-element type="OBJECT" id="trigger" selected="true" />
++            <filter-element type="OBJECT" id="synonym" selected="true" />
++            <filter-element type="OBJECT" id="sequence" selected="true" />
++            <filter-element type="OBJECT" id="procedure" selected="true" />
++            <filter-element type="OBJECT" id="function" selected="true" />
++            <filter-element type="OBJECT" id="package" selected="true" />
++            <filter-element type="OBJECT" id="type" selected="true" />
++            <filter-element type="OBJECT" id="dimension" selected="true" />
++            <filter-element type="OBJECT" id="cluster" selected="true" />
++            <filter-element type="OBJECT" id="dblink" selected="true" />
++          </any-schema>
++        </basic-filter>
++        <extended-filter>
++          <filter-element type="RESERVED_WORD" id="keyword" selected="true" />
++          <filter-element type="RESERVED_WORD" id="function" selected="true" />
++          <filter-element type="RESERVED_WORD" id="parameter" selected="true" />
++          <filter-element type="RESERVED_WORD" id="datatype" selected="true" />
++          <filter-element type="RESERVED_WORD" id="exception" selected="true" />
++          <filter-element type="OBJECT" id="schema" selected="true" />
++          <filter-element type="OBJECT" id="user" selected="true" />
++          <filter-element type="OBJECT" id="role" selected="true" />
++          <filter-element type="OBJECT" id="privilege" selected="true" />
++          <user-schema>
++            <filter-element type="OBJECT" id="table" selected="true" />
++            <filter-element type="OBJECT" id="view" selected="true" />
++            <filter-element type="OBJECT" id="materialized view" selected="true" />
++            <filter-element type="OBJECT" id="index" selected="true" />
++            <filter-element type="OBJECT" id="constraint" selected="true" />
++            <filter-element type="OBJECT" id="trigger" selected="true" />
++            <filter-element type="OBJECT" id="synonym" selected="true" />
++            <filter-element type="OBJECT" id="sequence" selected="true" />
++            <filter-element type="OBJECT" id="procedure" selected="true" />
++            <filter-element type="OBJECT" id="function" selected="true" />
++            <filter-element type="OBJECT" id="package" selected="true" />
++            <filter-element type="OBJECT" id="type" selected="true" />
++            <filter-element type="OBJECT" id="dimension" selected="true" />
++            <filter-element type="OBJECT" id="cluster" selected="true" />
++            <filter-element type="OBJECT" id="dblink" selected="true" />
++          </user-schema>
++          <public-schema>
++            <filter-element type="OBJECT" id="table" selected="true" />
++            <filter-element type="OBJECT" id="view" selected="true" />
++            <filter-element type="OBJECT" id="materialized view" selected="true" />
++            <filter-element type="OBJECT" id="index" selected="true" />
++            <filter-element type="OBJECT" id="constraint" selected="true" />
++            <filter-element type="OBJECT" id="trigger" selected="true" />
++            <filter-element type="OBJECT" id="synonym" selected="true" />
++            <filter-element type="OBJECT" id="sequence" selected="true" />
++            <filter-element type="OBJECT" id="procedure" selected="true" />
++            <filter-element type="OBJECT" id="function" selected="true" />
++            <filter-element type="OBJECT" id="package" selected="true" />
++            <filter-element type="OBJECT" id="type" selected="true" />
++            <filter-element type="OBJECT" id="dimension" selected="true" />
++            <filter-element type="OBJECT" id="cluster" selected="true" />
++            <filter-element type="OBJECT" id="dblink" selected="true" />
++          </public-schema>
++          <any-schema>
++            <filter-element type="OBJECT" id="table" selected="true" />
++            <filter-element type="OBJECT" id="view" selected="true" />
++            <filter-element type="OBJECT" id="materialized view" selected="true" />
++            <filter-element type="OBJECT" id="index" selected="true" />
++            <filter-element type="OBJECT" id="constraint" selected="true" />
++            <filter-element type="OBJECT" id="trigger" selected="true" />
++            <filter-element type="OBJECT" id="synonym" selected="true" />
++            <filter-element type="OBJECT" id="sequence" selected="true" />
++            <filter-element type="OBJECT" id="procedure" selected="true" />
++            <filter-element type="OBJECT" id="function" selected="true" />
++            <filter-element type="OBJECT" id="package" selected="true" />
++            <filter-element type="OBJECT" id="type" selected="true" />
++            <filter-element type="OBJECT" id="dimension" selected="true" />
++            <filter-element type="OBJECT" id="cluster" selected="true" />
++            <filter-element type="OBJECT" id="dblink" selected="true" />
++          </any-schema>
++        </extended-filter>
++      </filters>
++      <sorting enabled="true">
++        <sorting-element type="RESERVED_WORD" id="keyword" />
++        <sorting-element type="RESERVED_WORD" id="datatype" />
++        <sorting-element type="OBJECT" id="column" />
++        <sorting-element type="OBJECT" id="table" />
++        <sorting-element type="OBJECT" id="view" />
++        <sorting-element type="OBJECT" id="materialized view" />
++        <sorting-element type="OBJECT" id="index" />
++        <sorting-element type="OBJECT" id="constraint" />
++        <sorting-element type="OBJECT" id="trigger" />
++        <sorting-element type="OBJECT" id="synonym" />
++        <sorting-element type="OBJECT" id="sequence" />
++        <sorting-element type="OBJECT" id="procedure" />
++        <sorting-element type="OBJECT" id="function" />
++        <sorting-element type="OBJECT" id="package" />
++        <sorting-element type="OBJECT" id="type" />
++        <sorting-element type="OBJECT" id="dimension" />
++        <sorting-element type="OBJECT" id="cluster" />
++        <sorting-element type="OBJECT" id="dblink" />
++        <sorting-element type="OBJECT" id="schema" />
++        <sorting-element type="OBJECT" id="role" />
++        <sorting-element type="OBJECT" id="user" />
++        <sorting-element type="RESERVED_WORD" id="function" />
++        <sorting-element type="RESERVED_WORD" id="parameter" />
++      </sorting>
++      <format>
++        <enforce-code-style-case value="true" />
++      </format>
++    </code-completion-settings>
++    <execution-engine-settings>
++      <statement-execution>
++        <fetch-block-size value="100" />
++        <execution-timeout value="20" />
++        <debug-execution-timeout value="600" />
++        <focus-result value="false" />
++        <prompt-execution value="false" />
++      </statement-execution>
++      <script-execution>
++        <command-line-interfaces />
++        <execution-timeout value="300" />
++      </script-execution>
++      <method-execution>
++        <execution-timeout value="30" />
++        <debug-execution-timeout value="600" />
++        <parameter-history-size value="10" />
++      </method-execution>
++    </execution-engine-settings>
++    <operation-settings>
++      <transactions>
++        <uncommitted-changes>
++          <on-project-close value="ASK" />
++          <on-disconnect value="ASK" />
++          <on-autocommit-toggle value="ASK" />
++        </uncommitted-changes>
++        <multiple-uncommitted-changes>
++          <on-commit value="ASK" />
++          <on-rollback value="ASK" />
++        </multiple-uncommitted-changes>
++      </transactions>
++      <session-browser>
++        <disconnect-session value="ASK" />
++        <kill-session value="ASK" />
++        <reload-on-filter-change value="false" />
++      </session-browser>
++      <compiler>
++        <compile-type value="KEEP" />
++        <compile-dependencies value="ASK" />
++        <always-show-controls value="false" />
++      </compiler>
++      <debugger>
++        <debugger-type value="ASK" />
++        <use-generic-runners value="true" />
++      </debugger>
++    </operation-settings>
++    <ddl-file-settings>
++      <extensions>
++        <mapping file-type-id="VIEW" extensions="vw" />
++        <mapping file-type-id="TRIGGER" extensions="trg" />
++        <mapping file-type-id="PROCEDURE" extensions="prc" />
++        <mapping file-type-id="FUNCTION" extensions="fnc" />
++        <mapping file-type-id="PACKAGE" extensions="pkg" />
++        <mapping file-type-id="PACKAGE_SPEC" extensions="pks" />
++        <mapping file-type-id="PACKAGE_BODY" extensions="pkb" />
++        <mapping file-type-id="TYPE" extensions="tpe" />
++        <mapping file-type-id="TYPE_SPEC" extensions="tps" />
++        <mapping file-type-id="TYPE_BODY" extensions="tpb" />
++      </extensions>
++      <general>
++        <lookup-ddl-files value="true" />
++        <create-ddl-files value="false" />
++        <synchronize-ddl-files value="true" />
++        <use-qualified-names value="false" />
++        <make-scripts-rerunnable value="true" />
++      </general>
++    </ddl-file-settings>
++    <general-settings>
++      <regional-settings>
++        <date-format value="MEDIUM" />
++        <number-format value="UNGROUPED" />
++        <locale value="SYSTEM_DEFAULT" />
++        <use-custom-formats value="false" />
++      </regional-settings>
++      <environment>
++        <environment-types>
++          <environment-type id="development" name="Development" description="Development environment" color="-2430209/-12296320" readonly-code="false" readonly-data="false" />
++          <environment-type id="integration" name="Integration" description="Integration environment" color="-2621494/-12163514" readonly-code="true" readonly-data="false" />
++          <environment-type id="production" name="Production" description="Productive environment" color="-11574/-10271420" readonly-code="true" readonly-data="true" />
++          <environment-type id="other" name="Other" description="" color="-1576/-10724543" readonly-code="false" readonly-data="false" />
++        </environment-types>
++        <visibility-settings>
++          <connection-tabs value="true" />
++          <dialog-headers value="true" />
++          <object-editor-tabs value="true" />
++          <script-editor-tabs value="false" />
++          <execution-result-tabs value="true" />
++        </visibility-settings>
++      </environment>
++    </general-settings>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"df1a34aa-0db4-4e5d-a0c6-ba25e0f37d04\" name=\"Changes\" comment=\"Initial Commit 2\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"MavenImportPreferences\">\r\n    <option name=\"importingSettings\">\r\n      <MavenImportingSettings>\r\n        <option name=\"workspaceImportEnabled\" value=\"true\" />\r\n      </MavenImportingSettings>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2M9p7BK7mvN118NAclBnRDVcboe\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\r\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;C:/Users/Muaz Yagci/IdeaProjects/Bahtiyar/src/test/java/com/Bahtiyar&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\Muaz Yagci\\IdeaProjects\\Bahtiyar\\src\\test\\java\\com\\Bahtiyar\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\">\r\n    <configuration name=\"CukesRunner\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"Bahtiyar\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"com.Bahtiyar.runners.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"com.Bahtiyar.runners\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.Bahtiyar.runners.CukesRunner\" />\r\n      <option name=\"TEST_OBJECT\" value=\"class\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"JUnit.CukesRunner\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"df1a34aa-0db4-4e5d-a0c6-ba25e0f37d04\" name=\"Changes\" comment=\"\" />\r\n      <created>1677189484380</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1677189484380</updated>\r\n      <workItem from=\"1677189485622\" duration=\"2790000\" />\r\n      <workItem from=\"1677192291873\" duration=\"361000\" />\r\n      <workItem from=\"1677244565735\" duration=\"332000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Initial Commit\">\r\n      <created>1677189715321</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1677189715321</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Initial Commit 2\">\r\n      <created>1677244883571</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1677244883571</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"3\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Initial Commit\" />\r\n    <MESSAGE value=\"Initial Commit 2\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Initial Commit 2\" />\r\n  </component>\r\n  <component name=\"XSLT-Support.FileAssociations.UIState\">\r\n    <expand />\r\n    <select />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision f35b90e85a57d6cef134be14037a71c669e361e9)
++++ b/.idea/workspace.xml	(date 1677247898858)
+@@ -4,7 +4,14 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="df1a34aa-0db4-4e5d-a0c6-ba25e0f37d04" name="Changes" comment="Initial Commit 2" />
++    <list default="true" id="df1a34aa-0db4-4e5d-a0c6-ba25e0f37d04" name="Changes" comment="Initial Commit 2">
++      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/configurations.properties" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/java/com/Bahtiyar/runners/CukesRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/Bahtiyar/runners/CukesRunner.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/java/com/Bahtiyar/step_definitions/Amazon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/Bahtiyar/step_definitions/Amazon.java" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -18,6 +25,11 @@
+     </option>
+   </component>
+   <component name="Git.Settings">
++    <option name="RECENT_BRANCH_BY_REPOSITORY">
++      <map>
++        <entry key="$PROJECT_DIR$" value="master" />
++      </map>
++    </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+   <component name="MarkdownSettingsMigration">
+@@ -49,6 +61,9 @@
+     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
++    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
++    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
++    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+     &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+   }
+@@ -112,10 +127,32 @@
+   <component name="TypeScriptGeneratedFilesManager">
+     <option name="version" value="3" />
+   </component>
++  <component name="Vcs.Log.Tabs.Properties">
++    <option name="TAB_STATES">
++      <map>
++        <entry key="MAIN">
++          <value>
++            <State />
++          </value>
++        </entry>
++      </map>
++    </option>
++  </component>
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="Initial Commit" />
+     <MESSAGE value="Initial Commit 2" />
+     <option name="LAST_COMMIT_MESSAGE" value="Initial Commit 2" />
++  </component>
++  <component name="XDebuggerManager">
++    <breakpoint-manager>
++      <breakpoints>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/test/java/com/Bahtiyar/runners/CukesRunner.java</url>
++          <line>19</line>
++          <option name="timeStamp" value="2" />
++        </line-breakpoint>
++      </breakpoints>
++    </breakpoint-manager>
+   </component>
+   <component name="XSLT-Support.FileAssociations.UIState">
+     <expand />

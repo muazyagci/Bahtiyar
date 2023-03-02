@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
         },
         features="src/test/resources",
         glue ="com/Bahtiyar/step_definitions",
-        dryRun = true,
+        dryRun = false,
         //stepNotifications = true,
         tags = "@Login"
 )
