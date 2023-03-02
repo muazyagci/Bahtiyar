@@ -14,8 +14,8 @@ import org.junit.runner.RunWith;
         features="src/test/resources",
         glue ="com/Bahtiyar/step_definitions",
         dryRun = false,
-        stepNotifications = true,
-        tags = "@login"
+        stepNotifications = false,
+        tags = "@Cydeo"
 )
 public class CukesRunner {
 
