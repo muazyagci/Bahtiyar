@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df1a34aa-0db4-4e5d-a0c6-ba25e0f37d04" name="Changes" comment="Day2">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/Bahtiyar/page/cydeo.java" afterDir="false" />
+    <list default="true" id="df1a34aa-0db4-4e5d-a0c6-ba25e0f37d04" name="Changes" comment="Initial Commit 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/Bahtiyar/page/cydeo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/Bahtiyar/page/cydeo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/Bahtiyar/step_definitions/Cydeo_Practice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/Bahtiyar/step_definitions/Cydeo_Practice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/Bahtiyar/utilities/BrowserUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/Bahtiyar/utilities/BrowserUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/AmazonLogin.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/AmazonLogin.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +26,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="chef" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -85,6 +88,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CukesRunner" />
         <item itemvalue="JUnit.CukesRunner" />
       </list>
     </recent_temporary>
